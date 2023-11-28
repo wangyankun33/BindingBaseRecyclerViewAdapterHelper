@@ -1,0 +1,1211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api api-source="JavaTypeSystem">
+  <package name="com.chad.library" jni-name="com/chad/library">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/chad/library/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.chad.library.BuildConfig" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="APPLICATION_ID" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.chad.library&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FLAVOR" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;unspecified&quot;" visibility="public" volatile="false" />
+    </class>
+  </package>
+  <package name="com.chad.library.adapter.base" jni-name="com/chad/library/adapter/base">
+    <class abstract="true" deprecated="not deprecated" extends="com.chad.library.adapter.base.BaseQuickAdapter" extends-generic-aware="com.chad.library.adapter.base.BaseQuickAdapter&lt;T, K&gt;" jni-extends="Lcom/chad/library/adapter/base/BaseQuickAdapter;" final="false" name="BaseItemDraggableAdapter" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseItemDraggableAdapter;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;" />
+        <typeParameter name="K" classBound="com.chad.library.adapter.base.BaseViewHolder" jni-classBound="Lcom/chad/library/adapter/base/BaseViewHolder;">
+          <genericConstraints>
+            <genericConstraint type="com.chad.library.adapter.base.BaseViewHolder" />
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="BaseItemDraggableAdapter" jni-signature="(ILjava/util/List;)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseItemDraggableAdapter" synthetic="false" visibility="public">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="BaseItemDraggableAdapter" jni-signature="(Ljava/util/List;)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseItemDraggableAdapter" synthetic="false" visibility="public">
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="disableDragItem" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="disableSwipeItem" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="enableDragItem" jni-signature="(Landroid/support/v7/widget/helper/ItemTouchHelper;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="itemTouchHelper" type="android.support.v7.widget.helper.ItemTouchHelper" jni-type="Landroid/support/v7/widget/helper/ItemTouchHelper;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="enableDragItem" jni-signature="(Landroid/support/v7/widget/helper/ItemTouchHelper;IZ)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="itemTouchHelper" type="android.support.v7.widget.helper.ItemTouchHelper" jni-type="Landroid/support/v7/widget/helper/ItemTouchHelper;" not-null="true" />
+        <parameter name="toggleViewId" type="int" jni-type="I" />
+        <parameter name="dragOnLongPress" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="enableSwipeItem" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getViewHolderPosition" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isItemDraggable" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isItemSwipeEnable" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemDragEnd" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemDragMoving" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;Landroid/support/v7/widget/RecyclerView$ViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="source" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="target" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemDragStart" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemSwipeClear" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemSwipeStart" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemSwiped" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemSwiping" jni-signature="(Landroid/graphics/Canvas;Landroid/support/v7/widget/RecyclerView$ViewHolder;FFZ)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="canvas" type="android.graphics.Canvas" jni-type="Landroid/graphics/Canvas;" />
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="dX" type="float" jni-type="F" />
+        <parameter name="dY" type="float" jni-type="F" />
+        <parameter name="isCurrentlyActive" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemDragListener" jni-signature="(Lcom/chad/library/adapter/base/listener/OnItemDragListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="onItemDragListener" type="com.chad.library.adapter.base.listener.OnItemDragListener" jni-type="Lcom/chad/library/adapter/base/listener/OnItemDragListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemSwipeListener" jni-signature="(Lcom/chad/library/adapter/base/listener/OnItemSwipeListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.chad.library.adapter.base.listener.OnItemSwipeListener" jni-type="Lcom/chad/library/adapter/base/listener/OnItemSwipeListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setToggleDragOnLongPress" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="longPress" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setToggleViewId" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="toggleViewId" type="int" jni-type="I" />
+      </method>
+      <field deprecated="not deprecated" final="false" name="itemDragEnabled" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="itemSwipeEnabled" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mDragOnLongPress" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mItemTouchHelper" jni-signature="Landroid/support/v7/widget/helper/ItemTouchHelper;" static="false" transient="false" type="android.support.v7.widget.helper.ItemTouchHelper" type-generic-aware="android.support.v7.widget.helper.ItemTouchHelper" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mOnItemDragListener" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemDragListener;" static="false" transient="false" type="com.chad.library.adapter.base.listener.OnItemDragListener" type-generic-aware="com.chad.library.adapter.base.listener.OnItemDragListener" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mOnItemSwipeListener" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemSwipeListener;" static="false" transient="false" type="com.chad.library.adapter.base.listener.OnItemSwipeListener" type-generic-aware="com.chad.library.adapter.base.listener.OnItemSwipeListener" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mOnToggleViewLongClickListener" jni-signature="Landroid/view/View$OnLongClickListener;" static="false" transient="false" type="android.view.View.OnLongClickListener" type-generic-aware="android.view.View.OnLongClickListener" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mOnToggleViewTouchListener" jni-signature="Landroid/view/View$OnTouchListener;" static="false" transient="false" type="android.view.View.OnTouchListener" type-generic-aware="android.view.View.OnTouchListener" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mToggleViewId" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseItemDraggableAdapter.1" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseItemDraggableAdapter$1;">
+      <implements name="android.view.View.OnLongClickListener" name-generic-aware="android.view.View.OnLongClickListener" jni-type="Landroid/view/View$OnLongClickListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onLongClick" jni-signature="(Landroid/view/View;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseItemDraggableAdapter.2" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseItemDraggableAdapter$2;">
+      <implements name="android.view.View.OnTouchListener" name-generic-aware="android.view.View.OnTouchListener" jni-type="Landroid/view/View$OnTouchListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTouch" jni-signature="(Landroid/view/View;Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="event" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="com.chad.library.adapter.base.BaseQuickAdapter" extends-generic-aware="com.chad.library.adapter.base.BaseQuickAdapter&lt;T, K&gt;" jni-extends="Lcom/chad/library/adapter/base/BaseQuickAdapter;" final="false" name="BaseMultiItemQuickAdapter" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseMultiItemQuickAdapter;">
+      <typeParameters>
+        <typeParameter name="T" interfaceBounds="com.chad.library.adapter.base.entity.MultiItemEntity" jni-interfaceBounds="Lcom/chad/library/adapter/base/entity/MultiItemEntity;">
+          <genericConstraints>
+            <genericConstraint type="com.chad.library.adapter.base.entity.MultiItemEntity" />
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="K" classBound="com.chad.library.adapter.base.BaseViewHolder" jni-classBound="Lcom/chad/library/adapter/base/BaseViewHolder;">
+          <genericConstraints>
+            <genericConstraint type="com.chad.library.adapter.base.BaseViewHolder" />
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="BaseMultiItemQuickAdapter" jni-signature="(Ljava/util/List;)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseMultiItemQuickAdapter" synthetic="false" visibility="public">
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addItemType" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="type" type="int" jni-type="I" />
+        <parameter name="layoutResId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeAllChild" jni-signature="(Lcom/chad/library/adapter/base/entity/IExpandable;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="parent" type="com.chad.library.adapter.base.entity.IExpandable" jni-type="Lcom/chad/library/adapter/base/entity/IExpandable;" />
+        <parameter name="parentPosition" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeDataFromParent" jni-signature="(Lcom/chad/library/adapter/base/entity/MultiItemEntity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="child" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setDefaultViewTypeLayout" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="TYPE_NOT_FOUND" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="-404" visibility="public" volatile="false" />
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="android.support.v7.widget.RecyclerView.Adapter" extends-generic-aware="android.support.v7.widget.RecyclerView.Adapter&lt;K&gt;" jni-extends="Landroid/support/v7/widget/RecyclerView$Adapter;" final="false" name="BaseQuickAdapter" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;" />
+        <typeParameter name="K" classBound="com.chad.library.adapter.base.BaseViewHolder" jni-classBound="Lcom/chad/library/adapter/base/BaseViewHolder;">
+          <genericConstraints>
+            <genericConstraint type="com.chad.library.adapter.base.BaseViewHolder" />
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="BaseQuickAdapter" jni-signature="(I)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseQuickAdapter" synthetic="false" visibility="public">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="BaseQuickAdapter" jni-signature="(ILjava/util/List;)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseQuickAdapter" synthetic="false" visibility="public">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="BaseQuickAdapter" jni-signature="(Ljava/util/List;)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseQuickAdapter" synthetic="false" visibility="public">
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <method abstract="false" deprecated="deprecated" final="false" name="add" jni-signature="(ILjava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="item" type="T" jni-type="TT;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addData" jni-signature="(ILjava/util/Collection;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="newData" type="java.util.Collection&lt;? extends T&gt;" jni-type="Ljava/util/Collection&lt;+TT;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addData" jni-signature="(ILjava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="data" type="T" jni-type="TT;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addData" jni-signature="(Ljava/util/Collection;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="newData" type="java.util.Collection&lt;? extends T&gt;" jni-type="Ljava/util/Collection&lt;+TT;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addData" jni-signature="(Ljava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="T" jni-type="TT;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addFooterView" jni-signature="(Landroid/view/View;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="footer" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addFooterView" jni-signature="(Landroid/view/View;I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="footer" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addFooterView" jni-signature="(Landroid/view/View;II)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="footer" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+        <parameter name="orientation" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addHeaderView" jni-signature="(Landroid/view/View;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addHeaderView" jni-signature="(Landroid/view/View;I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addHeaderView" jni-signature="(Landroid/view/View;II)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+        <parameter name="orientation" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="bindToRecyclerView" jni-signature="(Landroid/support/v7/widget/RecyclerView;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="recyclerView" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="collapse" jni-signature="(I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="collapse" jni-signature="(IZ)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="animate" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="collapse" jni-signature="(IZZ)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="animate" type="boolean" jni-type="Z" />
+        <parameter name="notify" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="convert" jni-signature="(Lcom/chad/library/adapter/base/BaseViewHolder;Ljava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="K" jni-type="TK;" />
+        <parameter name="p1" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createBaseViewHolder" jni-signature="(Landroid/view/View;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="K" jni-return="TK;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createBaseViewHolder" jni-signature="(Landroid/view/ViewGroup;I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="K" jni-return="TK;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="parent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" />
+        <parameter name="layoutResId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="disableLoadMoreIfNotFullPage" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="disableLoadMoreIfNotFullPage" jni-signature="(Landroid/support/v7/widget/RecyclerView;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="recyclerView" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="enableLoadMoreEndClick" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="enable" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="expand" jni-signature="(I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="expand" jni-signature="(IZ)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="animate" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="expand" jni-signature="(IZZ)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="animate" type="boolean" jni-type="Z" />
+        <parameter name="shouldNotify" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="expandAll" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="expandAll" jni-signature="(IZ)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="init" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="expandAll" jni-signature="(IZZ)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="animate" type="boolean" jni-type="Z" />
+        <parameter name="notify" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getData" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;T&gt;" jni-return="Ljava/util/List&lt;TT;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDefItemViewType" jni-signature="(I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getEmptyView" jni-signature="()Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getEmptyViewCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getFooterLayout" jni-signature="()Landroid/widget/LinearLayout;" bridge="false" native="false" return="android.widget.LinearLayout" jni-return="Landroid/widget/LinearLayout;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getFooterLayoutCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="deprecated" final="false" name="getFooterViewsCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHeaderLayout" jni-signature="()Landroid/widget/LinearLayout;" bridge="false" native="false" return="android.widget.LinearLayout" jni-return="Landroid/widget/LinearLayout;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHeaderLayoutCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="deprecated" final="false" name="getHeaderViewsCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getItem" jni-signature="(I)Ljava/lang/Object;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getItemCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getItemView" jni-signature="(ILandroid/view/ViewGroup;)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+        <parameter name="parent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLoadMoreViewCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLoadMoreViewPosition" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMultiTypeDelegate" jni-signature="()Lcom/chad/library/adapter/base/util/MultiTypeDelegate;" bridge="false" native="false" return="com.chad.library.adapter.base.util.MultiTypeDelegate&lt;T&gt;" jni-return="Lcom/chad/library/adapter/base/util/MultiTypeDelegate&lt;TT;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getOnItemChildClickListener" jni-signature="()Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildClickListener;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseQuickAdapter.OnItemChildClickListener" jni-return="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildClickListener;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getOnItemChildLongClickListener" jni-signature="()Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildLongClickListener;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseQuickAdapter.OnItemChildLongClickListener" jni-return="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildLongClickListener;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getOnItemClickListener" jni-signature="()Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemClickListener;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseQuickAdapter.OnItemClickListener" jni-return="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemClickListener;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getOnItemLongClickListener" jni-signature="()Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemLongClickListener;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseQuickAdapter.OnItemLongClickListener" jni-return="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemLongClickListener;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getParentPosition" jni-signature="(Ljava/lang/Object;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="item" type="T" jni-type="TT;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRecyclerView" jni-signature="()Landroid/support/v7/widget/RecyclerView;" bridge="false" native="false" return="android.support.v7.widget.RecyclerView" jni-return="Landroid/support/v7/widget/RecyclerView;" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getViewByPosition" jni-signature="(Landroid/support/v7/widget/RecyclerView;II)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="recyclerView" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="viewId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getViewByPosition" jni-signature="(II)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="viewId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isExpandable" jni-signature="(Ljava/lang/Object;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="item" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isFirstOnly" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="firstOnly" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isFixedViewType" jni-signature="(I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="type" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isFooterViewAsFlow" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isHeaderViewAsFlow" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isLoadMoreEnable" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isLoading" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isUpFetchEnable" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isUpFetching" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isUseEmpty" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="isUseEmpty" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadMoreComplete" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadMoreEnd" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadMoreEnd" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="gone" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadMoreFail" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="notifyLoadMoreToLoading" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onBindViewHolder" jni-signature="(Lcom/chad/library/adapter/base/BaseViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holder" type="K" jni-type="TK;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreateDefViewHolder" jni-signature="(Landroid/view/ViewGroup;I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="K" jni-return="TK;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="parent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" />
+        <parameter name="viewType" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreateViewHolder" jni-signature="(Landroid/view/ViewGroup;I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="android.support.v7.widget.RecyclerView.ViewHolder" jni-return="TK;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="parent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" />
+        <parameter name="viewType" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onViewAttachedToWindow" jni-signature="(Lcom/chad/library/adapter/base/BaseViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holder" type="K" jni-type="TK;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openLoadAnimation" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="openLoadAnimation" jni-signature="(Lcom/chad/library/adapter/base/animation/BaseAnimation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="animation" type="com.chad.library.adapter.base.animation.BaseAnimation" jni-type="Lcom/chad/library/adapter/base/animation/BaseAnimation;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openLoadAnimation" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="animationType" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="remove" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeAllFooterView" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeAllHeaderView" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeFooterView" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="footer" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeHeaderView" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="replaceData" jni-signature="(Ljava/util/Collection;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="java.util.Collection&lt;? extends T&gt;" jni-type="Ljava/util/Collection&lt;+TT;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setAutoLoadMoreSize" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="preLoadNumber" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setData" jni-signature="(ILjava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="index" type="int" jni-type="I" />
+        <parameter name="data" type="T" jni-type="TT;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setDuration" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="duration" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEmptyView" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="emptyView" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEmptyView" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEmptyView" jni-signature="(ILandroid/view/ViewGroup;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+        <parameter name="viewGroup" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEnableLoadMore" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="enable" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFooterView" jni-signature="(Landroid/view/View;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFooterView" jni-signature="(Landroid/view/View;I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFooterView" jni-signature="(Landroid/view/View;II)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+        <parameter name="orientation" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFooterViewAsFlow" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="footerViewAsFlow" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFullSpan" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="holder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setHeaderAndEmpty" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="isHeadAndEmpty" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setHeaderFooterEmpty" jni-signature="(ZZ)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="isHeadAndEmpty" type="boolean" jni-type="Z" />
+        <parameter name="isFootAndEmpty" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setHeaderView" jni-signature="(Landroid/view/View;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setHeaderView" jni-signature="(Landroid/view/View;I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setHeaderView" jni-signature="(Landroid/view/View;II)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="header" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="index" type="int" jni-type="I" />
+        <parameter name="orientation" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setHeaderViewAsFlow" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="headerViewAsFlow" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLoadMoreView" jni-signature="(Lcom/chad/library/adapter/base/loadmore/LoadMoreView;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="loadingView" type="com.chad.library.adapter.base.loadmore.LoadMoreView" jni-type="Lcom/chad/library/adapter/base/loadmore/LoadMoreView;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiTypeDelegate" jni-signature="(Lcom/chad/library/adapter/base/util/MultiTypeDelegate;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="multiTypeDelegate" type="com.chad.library.adapter.base.util.MultiTypeDelegate&lt;T&gt;" jni-type="Lcom/chad/library/adapter/base/util/MultiTypeDelegate&lt;TT;&gt;;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNewData" jni-signature="(Ljava/util/List;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNotDoAnimationCount" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="count" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemChildClickListener" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.chad.library.adapter.base.BaseQuickAdapter.OnItemChildClickListener" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildClickListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemChildLongClickListener" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildLongClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.chad.library.adapter.base.BaseQuickAdapter.OnItemChildLongClickListener" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildLongClickListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemClick" jni-signature="(Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemClickListener" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.chad.library.adapter.base.BaseQuickAdapter.OnItemClickListener" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemClickListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemLongClick" jni-signature="(Landroid/view/View;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemLongClickListener" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemLongClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.chad.library.adapter.base.BaseQuickAdapter.OnItemLongClickListener" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemLongClickListener;" />
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setOnLoadMoreListener" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$RequestLoadMoreListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="requestLoadMoreListener" type="com.chad.library.adapter.base.BaseQuickAdapter.RequestLoadMoreListener" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$RequestLoadMoreListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnLoadMoreListener" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$RequestLoadMoreListener;Landroid/support/v7/widget/RecyclerView;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="requestLoadMoreListener" type="com.chad.library.adapter.base.BaseQuickAdapter.RequestLoadMoreListener" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$RequestLoadMoreListener;" />
+        <parameter name="recyclerView" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPreLoadNumber" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="preLoadNumber" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSpanSizeLookup" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$SpanSizeLookup;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="spanSizeLookup" type="com.chad.library.adapter.base.BaseQuickAdapter.SpanSizeLookup" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$SpanSizeLookup;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setStartUpFetchPosition" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startUpFetchPosition" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setUpFetchEnable" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="upFetch" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setUpFetchListener" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter$UpFetchListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="upFetchListener" type="com.chad.library.adapter.base.BaseQuickAdapter.UpFetchListener" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter$UpFetchListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setUpFetching" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="upFetching" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="startAnim" jni-signature="(Landroid/animation/Animator;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="anim" type="android.animation.Animator" jni-type="Landroid/animation/Animator;" />
+        <parameter name="index" type="int" jni-type="I" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="ALPHAIN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="EMPTY_VIEW" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1365" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FOOTER_VIEW" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="819" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="HEADER_VIEW" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="273" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LOADING_VIEW" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="546" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mContext" jni-signature="Landroid/content/Context;" static="false" transient="false" type="android.content.Context" type-generic-aware="android.content.Context" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mData" jni-signature="Ljava/util/List;" static="false" transient="false" type="java.util.List" type-generic-aware="java.util.List&lt;T&gt;" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mLayoutInflater" jni-signature="Landroid/view/LayoutInflater;" static="false" transient="false" type="android.view.LayoutInflater" type-generic-aware="android.view.LayoutInflater" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mLayoutResId" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SCALEIN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDEIN_BOTTOM" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDEIN_LEFT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDEIN_RIGHT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="TAG" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseQuickAdapter.1" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$1;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseQuickAdapter.2" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$2;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseQuickAdapter.3" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$3;">
+      <implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener" jni-type="Landroid/view/View$OnClickListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.support.v7.widget.GridLayoutManager.SpanSizeLookup" extends-generic-aware="android.support.v7.widget.GridLayoutManager.SpanSizeLookup" jni-extends="Landroid/support/v7/widget/GridLayoutManager$SpanSizeLookup;" final="false" name="BaseQuickAdapter.4" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$4;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSpanSize" jni-signature="(I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseQuickAdapter.5" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$5;">
+      <implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener" jni-type="Landroid/view/View$OnClickListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseQuickAdapter.6" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$6;">
+      <implements name="android.view.View.OnLongClickListener" name-generic-aware="android.view.View.OnLongClickListener" jni-type="Landroid/view/View$OnLongClickListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onLongClick" jni-signature="(Landroid/view/View;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseQuickAdapter.7" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$7;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.AnimationType" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$AnimationType;">
+      <implements name="java.lang.annotation.Annotation" name-generic-aware="java.lang.annotation.Annotation" jni-type="Ljava/lang/annotation/Annotation;" />
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.OnItemChildClickListener" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildClickListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemChildClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.OnItemChildLongClickListener" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemChildLongClickListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemChildLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.OnItemClickListener" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemClickListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.OnItemLongClickListener" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$OnItemLongClickListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.RequestLoadMoreListener" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$RequestLoadMoreListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onLoadMoreRequested" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.SpanSizeLookup" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$SpanSizeLookup;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="getSpanSize" jni-signature="(Landroid/support/v7/widget/GridLayoutManager;I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.widget.GridLayoutManager" jni-type="Landroid/support/v7/widget/GridLayoutManager;" />
+        <parameter name="p1" type="int" jni-type="I" />
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseQuickAdapter.UpFetchListener" static="true" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter$UpFetchListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onUpFetch" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </interface>
+    <class abstract="true" deprecated="not deprecated" extends="com.chad.library.adapter.base.BaseQuickAdapter" extends-generic-aware="com.chad.library.adapter.base.BaseQuickAdapter&lt;T, K&gt;" jni-extends="Lcom/chad/library/adapter/base/BaseQuickAdapter;" final="false" name="BaseSectionQuickAdapter" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseSectionQuickAdapter;">
+      <typeParameters>
+        <typeParameter name="T" classBound="com.chad.library.adapter.base.entity.SectionEntity" jni-classBound="Lcom/chad/library/adapter/base/entity/SectionEntity;">
+          <genericConstraints>
+            <genericConstraint type="com.chad.library.adapter.base.entity.SectionEntity" />
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="K" classBound="com.chad.library.adapter.base.BaseViewHolder" jni-classBound="Lcom/chad/library/adapter/base/BaseViewHolder;">
+          <genericConstraints>
+            <genericConstraint type="com.chad.library.adapter.base.BaseViewHolder" />
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="BaseSectionQuickAdapter" jni-signature="(IILjava/util/List;)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseSectionQuickAdapter" synthetic="false" visibility="public">
+        <parameter name="layoutResId" type="int" jni-type="I" />
+        <parameter name="sectionHeadResId" type="int" jni-type="I" />
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <method abstract="true" deprecated="not deprecated" final="false" name="convertHead" jni-signature="(Lcom/chad/library/adapter/base/BaseViewHolder;Lcom/chad/library/adapter/base/entity/SectionEntity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="K" jni-type="TK;" />
+        <parameter name="p1" type="T" jni-type="TT;" />
+      </method>
+      <field deprecated="not deprecated" final="false" name="mSectionHeadResId" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SECTION_HEADER_VIEW" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1092" visibility="protected" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.support.v7.widget.RecyclerView.ViewHolder" extends-generic-aware="android.support.v7.widget.RecyclerView.ViewHolder" jni-extends="Landroid/support/v7/widget/RecyclerView$ViewHolder;" final="false" name="BaseViewHolder" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/BaseViewHolder;">
+      <constructor deprecated="not deprecated" final="false" name="BaseViewHolder" jni-signature="(Landroid/view/View;)V" bridge="false" static="false" type="com.chad.library.adapter.base.BaseViewHolder" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addOnClickListener" jni-signature="(I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addOnLongClickListener" jni-signature="(I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAssociatedObject" jni-signature="()Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getChildClickViewIds" jni-signature="()Ljava/util/HashSet;" bridge="false" native="false" return="java.util.HashSet&lt;java.lang.Integer&gt;" jni-return="Ljava/util/HashSet&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="deprecated" final="false" name="getConvertView" jni-signature="()Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getItemChildLongClickViewIds" jni-signature="()Ljava/util/HashSet;" bridge="false" native="false" return="java.util.HashSet&lt;java.lang.Integer&gt;" jni-return="Ljava/util/HashSet&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNestViews" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getView" jni-signature="(I)Landroid/view/View;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <typeParameters>
+          <typeParameter name="T" classBound="android.view.View" jni-classBound="Landroid/view/View;">
+            <genericConstraints>
+              <genericConstraint type="android.view.View" />
+            </genericConstraints>
+          </typeParameter>
+        </typeParameters>
+        <parameter name="viewId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="linkify" jni-signature="(I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAdapter" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAdapter" jni-signature="(ILandroid/widget/Adapter;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="adapter" type="android.widget.Adapter" jni-type="Landroid/widget/Adapter;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" jni-signature="(IF)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="value" type="float" jni-type="F" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAssociatedObject" jni-signature="(Ljava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="associatedObject" type="java.lang.Object" jni-type="Ljava/lang/Object;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBackgroundColor" jni-signature="(II)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="color" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setBackgroundRes" jni-signature="(II)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="backgroundRes" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setChecked" jni-signature="(IZ)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="checked" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGone" jni-signature="(IZ)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="visible" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setImageBitmap" jni-signature="(ILandroid/graphics/Bitmap;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setImageDrawable" jni-signature="(ILandroid/graphics/drawable/Drawable;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="drawable" type="android.graphics.drawable.Drawable" jni-type="Landroid/graphics/drawable/Drawable;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setImageResource" jni-signature="(II)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="imageResId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMax" jni-signature="(II)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="max" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setNestView" jni-signature="(I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnCheckedChangeListener" jni-signature="(ILandroid/widget/CompoundButton$OnCheckedChangeListener;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="listener" type="android.widget.CompoundButton.OnCheckedChangeListener" jni-type="Landroid/widget/CompoundButton$OnCheckedChangeListener;" />
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setOnClickListener" jni-signature="(ILandroid/view/View$OnClickListener;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="listener" type="android.view.View.OnClickListener" jni-type="Landroid/view/View$OnClickListener;" />
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setOnItemClickListener" jni-signature="(ILandroid/widget/AdapterView$OnItemClickListener;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="listener" type="android.widget.AdapterView.OnItemClickListener" jni-type="Landroid/widget/AdapterView$OnItemClickListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemLongClickListener" jni-signature="(ILandroid/widget/AdapterView$OnItemLongClickListener;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="listener" type="android.widget.AdapterView.OnItemLongClickListener" jni-type="Landroid/widget/AdapterView$OnItemLongClickListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnItemSelectedClickListener" jni-signature="(ILandroid/widget/AdapterView$OnItemSelectedListener;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="listener" type="android.widget.AdapterView.OnItemSelectedListener" jni-type="Landroid/widget/AdapterView$OnItemSelectedListener;" />
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setOnLongClickListener" jni-signature="(ILandroid/view/View$OnLongClickListener;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="listener" type="android.view.View.OnLongClickListener" jni-type="Landroid/view/View$OnLongClickListener;" />
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setOnTouchListener" jni-signature="(ILandroid/view/View$OnTouchListener;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="listener" type="android.view.View.OnTouchListener" jni-type="Landroid/view/View$OnTouchListener;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setProgress" jni-signature="(II)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="progress" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setProgress" jni-signature="(III)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="progress" type="int" jni-type="I" />
+        <parameter name="max" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRating" jni-signature="(IF)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="rating" type="float" jni-type="F" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRating" jni-signature="(IFI)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="rating" type="float" jni-type="F" />
+        <parameter name="max" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTag" jni-signature="(IILjava/lang/Object;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="key" type="int" jni-type="I" />
+        <parameter name="tag" type="java.lang.Object" jni-type="Ljava/lang/Object;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTag" jni-signature="(ILjava/lang/Object;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="tag" type="java.lang.Object" jni-type="Ljava/lang/Object;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setText" jni-signature="(II)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="strId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setText" jni-signature="(ILjava/lang/CharSequence;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="value" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTextColor" jni-signature="(II)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="textColor" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTypeface" jni-signature="(Landroid/graphics/Typeface;[I)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="typeface" type="android.graphics.Typeface" jni-type="Landroid/graphics/Typeface;" />
+        <parameter name="viewIds" type="int..." jni-type="[I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTypeface" jni-signature="(ILandroid/graphics/Typeface;)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="typeface" type="android.graphics.Typeface" jni-type="Landroid/graphics/Typeface;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setVisible" jni-signature="(IZ)Lcom/chad/library/adapter/base/BaseViewHolder;" bridge="false" native="false" return="com.chad.library.adapter.base.BaseViewHolder" jni-return="Lcom/chad/library/adapter/base/BaseViewHolder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewId" type="int" jni-type="I" />
+        <parameter name="visible" type="boolean" jni-type="Z" />
+      </method>
+      <field deprecated="deprecated" final="false" name="convertView" jni-signature="Landroid/view/View;" static="false" transient="false" type="android.view.View" type-generic-aware="android.view.View" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseViewHolder.1" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseViewHolder$1;">
+      <implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener" jni-type="Landroid/view/View$OnClickListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseViewHolder.2" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/BaseViewHolder$2;">
+      <implements name="android.view.View.OnLongClickListener" name-generic-aware="android.view.View.OnLongClickListener" jni-type="Landroid/view/View$OnLongClickListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onLongClick" jni-signature="(Landroid/view/View;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+  </package>
+  <package name="com.chad.library.adapter.base.animation" jni-name="com/chad/library/adapter/base/animation">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AlphaInAnimation" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/animation/AlphaInAnimation;">
+      <implements name="com.chad.library.adapter.base.animation.BaseAnimation" name-generic-aware="com.chad.library.adapter.base.animation.BaseAnimation" jni-type="Lcom/chad/library/adapter/base/animation/BaseAnimation;" />
+      <constructor deprecated="not deprecated" final="false" name="AlphaInAnimation" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.animation.AlphaInAnimation" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="AlphaInAnimation" jni-signature="(F)V" bridge="false" static="false" type="com.chad.library.adapter.base.animation.AlphaInAnimation" synthetic="false" visibility="public">
+        <parameter name="from" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAnimators" jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;" bridge="false" native="false" return="android.animation.Animator[]" jni-return="[Landroid/animation/Animator;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseAnimation" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/animation/BaseAnimation;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="getAnimators" jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;" bridge="false" native="false" return="android.animation.Animator[]" jni-return="[Landroid/animation/Animator;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ScaleInAnimation" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/animation/ScaleInAnimation;">
+      <implements name="com.chad.library.adapter.base.animation.BaseAnimation" name-generic-aware="com.chad.library.adapter.base.animation.BaseAnimation" jni-type="Lcom/chad/library/adapter/base/animation/BaseAnimation;" />
+      <constructor deprecated="not deprecated" final="false" name="ScaleInAnimation" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.animation.ScaleInAnimation" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="ScaleInAnimation" jni-signature="(F)V" bridge="false" static="false" type="com.chad.library.adapter.base.animation.ScaleInAnimation" synthetic="false" visibility="public">
+        <parameter name="from" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAnimators" jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;" bridge="false" native="false" return="android.animation.Animator[]" jni-return="[Landroid/animation/Animator;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SlideInBottomAnimation" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/animation/SlideInBottomAnimation;">
+      <implements name="com.chad.library.adapter.base.animation.BaseAnimation" name-generic-aware="com.chad.library.adapter.base.animation.BaseAnimation" jni-type="Lcom/chad/library/adapter/base/animation/BaseAnimation;" />
+      <constructor deprecated="not deprecated" final="false" name="SlideInBottomAnimation" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.animation.SlideInBottomAnimation" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAnimators" jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;" bridge="false" native="false" return="android.animation.Animator[]" jni-return="[Landroid/animation/Animator;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SlideInLeftAnimation" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/animation/SlideInLeftAnimation;">
+      <implements name="com.chad.library.adapter.base.animation.BaseAnimation" name-generic-aware="com.chad.library.adapter.base.animation.BaseAnimation" jni-type="Lcom/chad/library/adapter/base/animation/BaseAnimation;" />
+      <constructor deprecated="not deprecated" final="false" name="SlideInLeftAnimation" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.animation.SlideInLeftAnimation" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAnimators" jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;" bridge="false" native="false" return="android.animation.Animator[]" jni-return="[Landroid/animation/Animator;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SlideInRightAnimation" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/animation/SlideInRightAnimation;">
+      <implements name="com.chad.library.adapter.base.animation.BaseAnimation" name-generic-aware="com.chad.library.adapter.base.animation.BaseAnimation" jni-type="Lcom/chad/library/adapter/base/animation/BaseAnimation;" />
+      <constructor deprecated="not deprecated" final="false" name="SlideInRightAnimation" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.animation.SlideInRightAnimation" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAnimators" jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;" bridge="false" native="false" return="android.animation.Animator[]" jni-return="[Landroid/animation/Animator;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+  </package>
+  <package name="com.chad.library.adapter.base.callback" jni-name="com/chad/library/adapter/base/callback">
+    <class abstract="false" deprecated="not deprecated" extends="android.support.v7.widget.helper.ItemTouchHelper.Callback" extends-generic-aware="android.support.v7.widget.helper.ItemTouchHelper.Callback" jni-extends="Landroid/support/v7/widget/helper/ItemTouchHelper$Callback;" final="false" name="ItemDragAndSwipeCallback" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/callback/ItemDragAndSwipeCallback;">
+      <constructor deprecated="not deprecated" final="false" name="ItemDragAndSwipeCallback" jni-signature="(Lcom/chad/library/adapter/base/BaseItemDraggableAdapter;)V" bridge="false" static="false" type="com.chad.library.adapter.base.callback.ItemDragAndSwipeCallback" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseItemDraggableAdapter" jni-type="Lcom/chad/library/adapter/base/BaseItemDraggableAdapter;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMovementFlags" jni-signature="(Landroid/support/v7/widget/RecyclerView;Landroid/support/v7/widget/RecyclerView$ViewHolder;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="recyclerView" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMove" jni-signature="(Landroid/support/v7/widget/RecyclerView;Landroid/support/v7/widget/RecyclerView$ViewHolder;Landroid/support/v7/widget/RecyclerView$ViewHolder;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="recyclerView" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+        <parameter name="source" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="target" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSwiped" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewHolder" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="direction" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setDragMoveFlags" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dragMoveFlags" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMoveThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="moveThreshold" type="float" jni-type="F" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSwipeMoveFlags" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="swipeMoveFlags" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSwipeThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="swipeThreshold" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.chad.library.adapter.base.entity" jni-name="com/chad/library/adapter/base/entity">
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AbstractExpandableItem" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/entity/AbstractExpandableItem;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;" />
+      </typeParameters>
+      <implements name="com.chad.library.adapter.base.entity.IExpandable" name-generic-aware="com.chad.library.adapter.base.entity.IExpandable&lt;T&gt;" jni-type="Lcom/chad/library/adapter/base/entity/IExpandable&lt;TT;&gt;;" />
+      <constructor deprecated="not deprecated" final="false" name="AbstractExpandableItem" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.entity.AbstractExpandableItem" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="addSubItem" jni-signature="(ILjava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+        <parameter name="subItem" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addSubItem" jni-signature="(Ljava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="subItem" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="contains" jni-signature="(Ljava/lang/Object;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="subItem" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSubItem" jni-signature="(I)Ljava/lang/Object;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSubItemPosition" jni-signature="(Ljava/lang/Object;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="subItem" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSubItems" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;T&gt;" jni-return="Ljava/util/List&lt;TT;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="hasSubItem" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="isExpanded" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeSubItem" jni-signature="(I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeSubItem" jni-signature="(Ljava/lang/Object;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="subItem" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setExpanded" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="expanded" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSubItems" jni-signature="(Ljava/util/List;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="list" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </method>
+      <field deprecated="not deprecated" final="false" name="mExpandable" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="mSubItems" jni-signature="Ljava/util/List;" static="false" transient="false" type="java.util.List" type-generic-aware="java.util.List&lt;T&gt;" visibility="protected" volatile="false" />
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="IExpandable" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/entity/IExpandable;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;" />
+      </typeParameters>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getLevel" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="getSubItems" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;T&gt;" jni-return="Ljava/util/List&lt;TT;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="isExpanded" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="setExpanded" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="boolean" jni-type="Z" />
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MultiItemEntity" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/entity/MultiItemEntity;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="getItemType" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </interface>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SectionEntity" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/entity/SectionEntity;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;" />
+      </typeParameters>
+      <implements name="java.io.Serializable" name-generic-aware="java.io.Serializable" jni-type="Ljava/io/Serializable;" />
+      <constructor deprecated="not deprecated" final="false" name="SectionEntity" jni-signature="(ZLjava/lang/String;)V" bridge="false" static="false" type="com.chad.library.adapter.base.entity.SectionEntity" synthetic="false" visibility="public">
+        <parameter name="isHeader" type="boolean" jni-type="Z" />
+        <parameter name="header" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="SectionEntity" jni-signature="(Ljava/lang/Object;)V" bridge="false" static="false" type="com.chad.library.adapter.base.entity.SectionEntity" synthetic="false" visibility="public">
+        <parameter name="t" type="T" jni-type="TT;" />
+      </constructor>
+      <field deprecated="not deprecated" final="false" name="header" jni-signature="Ljava/lang/String;" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="isHeader" jni-signature="Z" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="t" jni-signature="Ljava/lang/Object;" static="false" transient="false" type="java.lang.Object" type-generic-aware="T" visibility="public" volatile="false" />
+    </class>
+  </package>
+  <package name="com.chad.library.adapter.base.listener" jni-name="com/chad/library/adapter/base/listener">
+    <class abstract="true" deprecated="not deprecated" extends="com.chad.library.adapter.base.listener.SimpleClickListener" extends-generic-aware="com.chad.library.adapter.base.listener.SimpleClickListener" jni-extends="Lcom/chad/library/adapter/base/listener/SimpleClickListener;" final="false" name="OnItemChildClickListener" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemChildClickListener;">
+      <constructor deprecated="not deprecated" final="false" name="OnItemChildClickListener" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.listener.OnItemChildClickListener" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSimpleItemChildClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="com.chad.library.adapter.base.listener.SimpleClickListener" extends-generic-aware="com.chad.library.adapter.base.listener.SimpleClickListener" jni-extends="Lcom/chad/library/adapter/base/listener/SimpleClickListener;" final="false" name="OnItemChildLongClickListener" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemChildLongClickListener;">
+      <constructor deprecated="not deprecated" final="false" name="OnItemChildLongClickListener" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.listener.OnItemChildLongClickListener" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSimpleItemChildLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="com.chad.library.adapter.base.listener.SimpleClickListener" extends-generic-aware="com.chad.library.adapter.base.listener.SimpleClickListener" jni-extends="Lcom/chad/library/adapter/base/listener/SimpleClickListener;" final="false" name="OnItemClickListener" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemClickListener;">
+      <constructor deprecated="not deprecated" final="false" name="OnItemClickListener" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.listener.OnItemClickListener" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSimpleItemClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnItemDragListener" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemDragListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemDragEnd" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p1" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemDragMoving" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;ILandroid/support/v7/widget/RecyclerView$ViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p1" type="int" jni-type="I" />
+        <parameter name="p2" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p3" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemDragStart" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p1" type="int" jni-type="I" />
+      </method>
+    </interface>
+    <class abstract="true" deprecated="not deprecated" extends="com.chad.library.adapter.base.listener.SimpleClickListener" extends-generic-aware="com.chad.library.adapter.base.listener.SimpleClickListener" jni-extends="Lcom/chad/library/adapter/base/listener/SimpleClickListener;" final="false" name="OnItemLongClickListener" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemLongClickListener;">
+      <constructor deprecated="not deprecated" final="false" name="OnItemLongClickListener" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.listener.OnItemLongClickListener" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemChildLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onItemLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSimpleItemLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnItemSwipeListener" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/listener/OnItemSwipeListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="clearView" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p1" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemSwipeMoving" jni-signature="(Landroid/graphics/Canvas;Landroid/support/v7/widget/RecyclerView$ViewHolder;FFZ)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.graphics.Canvas" jni-type="Landroid/graphics/Canvas;" />
+        <parameter name="p1" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p2" type="float" jni-type="F" />
+        <parameter name="p3" type="float" jni-type="F" />
+        <parameter name="p4" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemSwipeStart" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p1" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemSwiped" jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.support.v7.widget.RecyclerView.ViewHolder" jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter name="p1" type="int" jni-type="I" />
+      </method>
+    </interface>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SimpleClickListener" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/listener/SimpleClickListener;">
+      <implements name="android.support.v7.widget.RecyclerView.OnItemTouchListener" name-generic-aware="android.support.v7.widget.RecyclerView.OnItemTouchListener" jni-type="Landroid/support/v7/widget/RecyclerView$OnItemTouchListener;" />
+      <constructor deprecated="not deprecated" final="false" name="SimpleClickListener" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.listener.SimpleClickListener" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="inRangeOfView" jni-signature="(Landroid/view/View;Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="ev" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onInterceptTouchEvent" jni-signature="(Landroid/support/v7/widget/RecyclerView;Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rv" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemChildClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemChildLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onItemLongClick" jni-signature="(Lcom/chad/library/adapter/base/BaseQuickAdapter;Landroid/view/View;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.chad.library.adapter.base.BaseQuickAdapter" jni-type="Lcom/chad/library/adapter/base/BaseQuickAdapter;" />
+        <parameter name="p1" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="p2" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRequestDisallowInterceptTouchEvent" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="disallowIntercept" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" jni-signature="(Landroid/support/v7/widget/RecyclerView;Landroid/view/MotionEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rv" type="android.support.v7.widget.RecyclerView" jni-type="Landroid/support/v7/widget/RecyclerView;" />
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <field deprecated="not deprecated" final="false" name="baseQuickAdapter" jni-signature="Lcom/chad/library/adapter/base/BaseQuickAdapter;" static="false" transient="false" type="com.chad.library.adapter.base.BaseQuickAdapter" type-generic-aware="com.chad.library.adapter.base.BaseQuickAdapter" visibility="protected" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="TAG" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SimpleClickListener.ItemTouchHelperGestureListener" static="false" visibility="private" jni-signature="Lcom/chad/library/adapter/base/listener/SimpleClickListener$ItemTouchHelperGestureListener;">
+      <implements name="android.view.GestureDetector.OnGestureListener" name-generic-aware="android.view.GestureDetector.OnGestureListener" jni-type="Landroid/view/GestureDetector$OnGestureListener;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDown" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onFling" jni-signature="(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e1" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+        <parameter name="e2" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+        <parameter name="velocityX" type="float" jni-type="F" />
+        <parameter name="velocityY" type="float" jni-type="F" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onLongPress" jni-signature="(Landroid/view/MotionEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onScroll" jni-signature="(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e1" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+        <parameter name="e2" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+        <parameter name="distanceX" type="float" jni-type="F" />
+        <parameter name="distanceY" type="float" jni-type="F" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onShowPress" jni-signature="(Landroid/view/MotionEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSingleTapUp" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SimpleClickListener.ItemTouchHelperGestureListener.1" static="false" visibility="" jni-signature="Lcom/chad/library/adapter/base/listener/SimpleClickListener$ItemTouchHelperGestureListener$1;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+  </package>
+  <package name="com.chad.library.adapter.base.loadmore" jni-name="com/chad/library/adapter/base/loadmore">
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="LoadMoreView" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/loadmore/LoadMoreView;">
+      <constructor deprecated="not deprecated" final="false" name="LoadMoreView" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.loadmore.LoadMoreView" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="convert" jni-signature="(Lcom/chad/library/adapter/base/BaseViewHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holder" type="com.chad.library.adapter.base.BaseViewHolder" jni-type="Lcom/chad/library/adapter/base/BaseViewHolder;" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getLayoutId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="getLoadEndViewId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="getLoadFailViewId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLoadMoreStatus" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="getLoadingViewId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="false" deprecated="deprecated" final="false" name="isLoadEndGone" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="isLoadEndMoreGone" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setLoadMoreEndGone" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="loadMoreEndGone" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLoadMoreStatus" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="loadMoreStatus" type="int" jni-type="I" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="STATUS_DEFAULT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="STATUS_END" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="STATUS_FAIL" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="STATUS_LOADING" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.chad.library.adapter.base.loadmore.LoadMoreView" extends-generic-aware="com.chad.library.adapter.base.loadmore.LoadMoreView" jni-extends="Lcom/chad/library/adapter/base/loadmore/LoadMoreView;" final="true" name="SimpleLoadMoreView" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/loadmore/SimpleLoadMoreView;">
+      <constructor deprecated="not deprecated" final="false" name="SimpleLoadMoreView" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.loadmore.SimpleLoadMoreView" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayoutId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLoadEndViewId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLoadFailViewId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLoadingViewId" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected" />
+    </class>
+  </package>
+  <package name="com.chad.library.adapter.base.util" jni-name="com/chad/library/adapter/base/util">
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MultiTypeDelegate" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/util/MultiTypeDelegate;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;" />
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="MultiTypeDelegate" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.util.MultiTypeDelegate" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="MultiTypeDelegate" jni-signature="(Landroid/util/SparseIntArray;)V" bridge="false" static="false" type="com.chad.library.adapter.base.util.MultiTypeDelegate" synthetic="false" visibility="public">
+        <parameter name="layouts" type="android.util.SparseIntArray" jni-type="Landroid/util/SparseIntArray;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDefItemViewType" jni-signature="(Ljava/util/List;I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;" />
+        <parameter name="position" type="int" jni-type="I" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getItemType" jni-signature="(Ljava/lang/Object;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="T" jni-type="TT;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getLayoutId" jni-signature="(I)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewType" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerItemType" jni-signature="(II)Lcom/chad/library/adapter/base/util/MultiTypeDelegate;" bridge="false" native="false" return="com.chad.library.adapter.base.util.MultiTypeDelegate" jni-return="Lcom/chad/library/adapter/base/util/MultiTypeDelegate;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="type" type="int" jni-type="I" />
+        <parameter name="layoutResId" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="registerItemTypeAutoIncrease" jni-signature="([I)Lcom/chad/library/adapter/base/util/MultiTypeDelegate;" bridge="false" native="false" return="com.chad.library.adapter.base.util.MultiTypeDelegate" jni-return="Lcom/chad/library/adapter/base/util/MultiTypeDelegate;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="layoutResIds" type="int..." jni-type="[I" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="TouchEventUtil" static="false" visibility="public" jni-signature="Lcom/chad/library/adapter/base/util/TouchEventUtil;">
+      <constructor deprecated="not deprecated" final="false" name="TouchEventUtil" jni-signature="()V" bridge="false" static="false" type="com.chad.library.adapter.base.util.TouchEventUtil" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTouchAction" jni-signature="(I)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="actionId" type="int" jni-type="I" />
+      </method>
+    </class>
+  </package>
+</api>
